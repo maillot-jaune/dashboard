@@ -6,5 +6,6 @@ get_tweet <- function(x){
   
   d <- twListToDF(homeTimeline(n = x))
   d <- d[1, 1] # 1=txt 11=usr
+  d <- as.character(d)
   return(d)
-} 
+}
