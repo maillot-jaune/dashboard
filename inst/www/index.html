@@ -13,7 +13,7 @@
 		var req = ocpu.rpc("get_tweet",{
 				x : 1
 			}, function(output){
-				$("#myFirstID").text(output);
+				$("#myFirstID").text(output.y.join("\n"));
 		});
 
 		req.fail(function(){
