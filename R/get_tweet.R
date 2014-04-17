@@ -1,6 +1,6 @@
 get_tweet <- function(x){
-  
-  load('~/Desktop/twitter_auth.Rdata')
+  library(twitteR)
+  load('/home/stefan/Desktop/twitter_auth.Rdata')
   
   registerTwitterOAuth(twitCred)
   
