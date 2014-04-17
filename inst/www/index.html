@@ -13,8 +13,7 @@
 		var req = ocpu.rpc("testr",{
 				x : 1
 			}, function(output){
-//				$("#myFirstID").text(output);
- 				alert("Weird output: " + output);
+				$("#myFirstID").text(output);
 		});
 
 		req.fail(function(){
