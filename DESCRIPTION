@@ -2,12 +2,10 @@ Package: dashboard
 Version: 0.0-1
 Date: 2014-04-12
 Title: Functions for running an internal dashboard via OpenCPU
-Authors@R: c(person("Stefan", "Developer", role = c("aut", "cre"))
+Authors@R: c(person("Stefan", "Developer", role = c("aut", "cre"), email = "stefan@inizio.se"))
 Author: Stefan Petersson
 Maintainer: Stefan Petersson <stefan@inizio.se>
 Depends: R (>= 1.8.0), twitteR
-Suggests: MASS
-Description: This package works closely with OpenCPU to populate a local 
-	dashboard on the wall of the Inizio office.
+Description: This package works closely with OpenCPU to populate a local dashboard on the wall of the Inizio office.
 License: GPL (>= 2)
-URL: http://www.inizio.se
+URL: http://www.inizio.se/

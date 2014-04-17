@@ -7,10 +7,22 @@
 	<script src="jquery/jquery.min.js"> </script>
 	<script src="opencpu/opencpu-0.5.js"> </script>
 	<link href="style.css" rel="stylesheet" media="screen">
+
+	<script> 
+
+	$(document).ready(function(){
+		var req = ocpu.rpc("get_tweet",
+			function(output){$("#myFirstID").text(output);
+		});
+	})
+
+	</script>
+
+
 </head>
 <body>
 
-
+<div class="myFirstID"></div>
 
 </body>
 </html>
