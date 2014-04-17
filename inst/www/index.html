@@ -3,12 +3,12 @@
 <html>
 <head>
 	<title>Test</title>
-	<!-- ocpu library -->
-	<script src="jquery/jquery.min.js"> </script>
-	<script src="opencpu/opencpu-0.5.js"> </script>
 	<link href="style.css" rel="stylesheet" media="screen">
-
-	<script> 
+		
+	<!-- ocpu library -->
+	<script type="javascript" src="jquery/jquery.min.js"> </script>
+	<script type="javascript" src="opencpu/opencpu-0.5.js"> </script>
+	<script type="javascript"> 
 
 	$(document).ready(function(){
 		var req = ocpu.rpc("get_tweet",{x : 1},
@@ -21,7 +21,7 @@
 </head>
 <body>
 <h1>Cloud Server</h1>
-<div class="myFirstID"></div>
+@twitter: <span id="myFirstID"></span>
 
 </body>
 </html>
