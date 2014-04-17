@@ -4,6 +4,9 @@
 \usage{
   get_tweet()
 }
+\arguments{
+  \item{x}{The number of tweets to get}
+}
 \description{
-  Get the latest tweet from @si_petersson.
+  Get the latest tweet from @si_petersson's timeline.
 }
