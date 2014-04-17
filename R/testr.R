@@ -1,6 +1,4 @@
 testr <- function(x){
-  y=x+pi
+  y <- x + pi
   return(y)
 }
-
-testr(1)
