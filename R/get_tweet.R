@@ -5,6 +5,6 @@ get_tweet <- function(x){
   registerTwitterOAuth(twitCred)
   
   d <- twListToDF(homeTimeline(n = x))
-  d <- d[1, c(1, 11)] # 1=txt 11=usr
+  d <- d[1, 1] # 1=txt 11=usr
   return(d)
-}
+} 
