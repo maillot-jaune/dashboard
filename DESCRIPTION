@@ -1,5 +1,5 @@
 Package: dashboard
-Version: 0.0-1
+Version: 0.0-2
 Date: 2014-04-12
 Title: Functions for running an internal dashboard via OpenCPU
 Authors@R: c(person("Stefan", "Developer", role = c("aut", "cre"), email = "stefan@inizio.se"))
