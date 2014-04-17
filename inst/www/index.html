@@ -11,9 +11,9 @@
 
 	$(document).ready(function(){
 		var req = ocpu.rpc("get_tweet",{
-				x : 1
+				"x" : 1
 			}, function(output){
-				$("#myFirstID").text(output.y.join("\n"));
+				$("#myFirstID").text(output);
 		});
 
 		req.fail(function(){
