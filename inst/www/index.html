@@ -11,10 +11,36 @@
 	<script type="javascript"> 
 
 	$(document).ready(function(){
-		var req = ocpu.rpc("dashboard::get_tweet",{x : 1},
-			function(output){$("#myFirstID").text(output);
+		var req = ocpu.rpc("get_tweet",{
+				x : 1
+			}, function(output){
+				$("#myFirstID").text(output);
 		});
-	})
+
+		req.fail(function(){
+			alert("R returned an error: " + req.responseText); 
+		});
+
+	});
+
+
+
+//$(document).ready(function(){
+//
+//  var req = ocpu.rpc("get_tweet",{
+//        x : 1
+//    }, function(output){
+//        $("code").text(output.y.join("\n"));
+//    }); 
+//
+//    //optional
+//    req.fail(function(){
+//        alert("R returned an error: " + req.responseText); 
+//    });
+//});
+
+
+
 
 	</script>
 
