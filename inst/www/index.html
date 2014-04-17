@@ -12,7 +12,7 @@
 	<script> 
 
 	$(document).ready(function(){
-		var req = ocpu.rpc("get_tweet",
+		var req = ocpu.rpc("sd",{x : 1},
 			function(output){$("#myFirstID").text(output);
 		});
 	})
