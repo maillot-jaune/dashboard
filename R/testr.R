@@ -15,7 +15,7 @@ testr <- function(x){
     }, error = function(e) {
       # error-handler-code
       #cat('Error, somethin went wrong\n')
-      d <- 'Error'
+      d <- paste('Error', e)
     }, finally = {
       # cleanup-code
       #cat('Nothin to do, set d to arbitrary string \n')
