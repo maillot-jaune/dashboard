@@ -3,9 +3,10 @@ testr <- function(x){
 #  return(y)
   tryCatch({
       
-      local({
-          load('/home/stefan/Desktop/twitter_auth.Rdata')
-        })
+#      local({
+#          load('/home/stefan/Desktop/twitter_auth.Rdata')
+#        })
+      y <- x + pi
       
     }, warning = function(w) {
       # warning-handler-code
