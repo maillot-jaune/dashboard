@@ -9,7 +9,7 @@ get_tweet <- function(x){
   #load('/home/stefan/Desktop/twitter_auth.Rdata')
   #
   # Authentcate...
-      
+  
   tryCatch({
       
       registerTwitterOAuth(twitCred)
@@ -28,8 +28,7 @@ get_tweet <- function(x){
       #cat('Nothin to do, set d to arbitrary string \n')
       d <- 'Clean up and tweet me!'
     })
-  
-
+ 
   #registerTwitterOAuth(twitCred)  
   #
   # Clean up
@@ -40,5 +39,3 @@ get_tweet <- function(x){
   # Return a character string
   return(d)
 }
-
-get_tweet(x=1)
