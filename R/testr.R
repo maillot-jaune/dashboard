@@ -6,7 +6,7 @@ testr <- function(x){
 #      local({
 #          load('/home/stefan/Desktop/twitter_auth.Rdata')
 #        })
-      y <- x + pi
+      d <- x + pi
       
     }, warning = function(w) {
       # warning-handler-code
