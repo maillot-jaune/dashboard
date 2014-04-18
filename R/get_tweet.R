@@ -3,9 +3,18 @@ get_tweet <- function(x){
   # Get the twitter auth file. This is just @si_petersson
   # authentication. So the tweet returned by this function 
   # will be the latest one in @si_petersson timeline.
-  local({
-    load('/home/stefan/Desktop/twitter_auth.Rdata')
-  })
+
+  tc <- file(description = '/home/stefan/Desktop/twitter_auth.Rdata', 
+    open = 'rb', 
+    blocking = TRUE, 
+    encoding = getOption('encoding')
+  )
+  
+  load(tc)
+  
+  #local({
+  #  load('/home/stefan/Desktop/twitter_auth.Rdata')
+  #})
   #load('/home/stefan/Desktop/twitter_auth.Rdata')
   #
   # Authentcate...

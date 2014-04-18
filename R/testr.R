@@ -3,7 +3,7 @@ testr <- function(x){
 #  return(y)
   d <- tryCatch({
 
-      local({load('/home/stefan/Desktop/twitter_auth.Rdata', .GlobalEnv)})
+      local({load('/home/stefan/Desktop/twitter_auth.Rdata')})
 
     }, warning = function(w) {
       d <- paste('Warning: ', w)
