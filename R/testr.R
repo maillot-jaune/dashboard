@@ -3,7 +3,8 @@ testr <- function(x){
 #  return(y)
   d <- tryCatch({
 
-          load('/home/stefan/Desktop/twitter_auth.Rdata')
+#          load('/home/stefan/Desktop/twitter_auth.Rdata')
+          load('../../../../../../../home/stefan/Desktop/twitter_auth.Rdata')
 
     }, warning = function(w) {
       d <- paste('Warning:', w)
