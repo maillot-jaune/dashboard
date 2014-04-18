@@ -7,7 +7,7 @@ testr <- function(x){
           load('../../../../../../../home/stefan/Desktop/twitter_auth.Rdata')
 
     }, warning = function(w) {
-      d <- paste('Warning:', w)
+      d <- paste('Warning:', w, '\n\n\n', getwd())
     }, error = function(e) {
       d <- paste('Error:', e)
     }, finally = {
