@@ -19,7 +19,7 @@ get_tweet <- function(x){
       
     }, warning = function(w) {
       # warning-handler-code
-      cat('Warning')
+      #cat('Warning')
     }, error = function(e) {
       # error-handler-code
       #cat('Error, somethin went wrong\n')
