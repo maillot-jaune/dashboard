@@ -3,12 +3,10 @@ testr <- function(x){
 #  return(y)
   d <- tryCatch({
 
-      local({load('/home/stefan/Desktop/twitter_auth.Rdata')})
-         
-#         load('../../../../../../../home/stefan/Desktop/twitter_auth.Rdata')
+      local({load('/home/stefan/Desktop/twitter_auth.Rdata', .GlobalEnv)})
 
     }, warning = function(w) {
-      d <- paste('Warning: ', w, getwd())
+      d <- paste('Warning: ', w)
     }, error = function(e) {
       d <- paste('Error:', e)
     }, finally = {
