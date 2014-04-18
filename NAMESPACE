@@ -1,2 +1,2 @@
-import(twitteR)
+import(twitteR, ROAuth, RCurl, bitops, digest, rjson)
 export(get_tweet, testr)
