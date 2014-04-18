@@ -11,7 +11,7 @@ testr <- function(x){
     }, warning = function(w) {
       # warning-handler-code
       #cat('Warning')
-      d <- 'Warning'
+      d <- paste('Warning',w)
     }, error = function(e) {
       # error-handler-code
       #cat('Error, somethin went wrong\n')
