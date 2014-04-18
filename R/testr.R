@@ -1,7 +1,7 @@
 testr <- function(x){
 #  y <- x + pi
 #  return(y)
-  tryCatch({
+  d <- tryCatch({
       
 #      local({
 #          load('/home/stefan/Desktop/twitter_auth.Rdata')
