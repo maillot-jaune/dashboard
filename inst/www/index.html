@@ -9,9 +9,11 @@
 	<script type="javascript" src="opencpu/opencpu-0.5.js"> </script>
 	<script type="javascript"> 
 
+var mydata = [1,2,2,1,2,3,2,3,4,5]
+
 	$(document).ready(function(){
-		var req = ocpu.rpc("testr",{
-				x : 1
+		var req = ocpu.rpc("sd",{
+				x : mydata
 			}, function(output){
 				$("#myFirstID").text(output);
 		});
