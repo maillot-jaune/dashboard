@@ -9,7 +9,8 @@ get_tweet <- function(x){
     encoding = getOption('encoding')
   )
   #
-  # Load the authentication data image into the current environment
+  # Load the authentication data image into the current 
+  # environment
   local({load(twitter_authentication)}) 
   #
   # Authentcate...
@@ -19,9 +20,9 @@ get_tweet <- function(x){
   d <- twListToDF(homeTimeline(n = x))
   d <- d[1, 1] # 1=txt 11=usr
   d <- as.character(d)
-  
+  #
+  # Close the file connection
   close(twitter_authentication)
-  unlink('/home/stefan/Desktop/twitter_auth.Rdata')
   #
   # Return a character string
   return(d)
