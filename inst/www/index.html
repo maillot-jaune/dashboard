@@ -10,20 +10,17 @@
 	<script type="text/javascript"> 
 
 	$(document).ready(function(){
-//	function(output){
-		$("#myFirstID").text("Hej");
-//	});
 
-//		var req = ocpu.rpc("sd",{
-//				x : mydata
-//			}, function(output){
-//				$("#myFirstID").text("Hej");
-//		});
-//
-//		req.fail(function(){
-//			alert("R returned an error: " + req.responseText); 
-//		});
-//
+		var req = ocpu.rpc("testr",{
+				x : 1
+			}, function(output){
+				$("#myFirstID").text(output);
+		});
+
+		req.fail(function(){
+			alert("R returned an error: " + req.responseText); 
+		});
+
 	});
 
 	</script>
