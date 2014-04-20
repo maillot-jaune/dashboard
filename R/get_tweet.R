@@ -11,7 +11,7 @@ get_tweet <- function(x){
   #
   # Load the authentication data image into the current 
   # environment
-  local({load(twitter_authentication)}) 
+  load(twitter_authentication)
   #
   # Authentcate...
   registerTwitterOAuth(twitCred)
