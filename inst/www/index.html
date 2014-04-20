@@ -14,7 +14,7 @@
 		var req = ocpu.rpc("get_tweet",{
 				x : 1
 			}, function(output){
-				$("#twitter_user").text("@" + output[0]);
+				$("#twitter_user").text("@" + output[0] + ":");
 				$("#tweet").text(output[1]);
 		});
 
