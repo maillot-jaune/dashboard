@@ -19,6 +19,9 @@ get_tweet <- function(x){
   d <- twListToDF(homeTimeline(n = x))
   d <- d[1, 1] # 1=txt 11=usr
   d <- as.character(d)
+  
+  close(twitter_authentication)
+  unlink('/home/stefan/Desktop/twitter_auth.Rdata')
   #
   # Return a character string
   return(d)
