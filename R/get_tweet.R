@@ -18,7 +18,7 @@ get_tweet <- function(x){
   #
   # Fix
   d <- twListToDF(homeTimeline(n = x))
-  d <- d[1, 1] # 1=txt 11=usr
+  d <- d[1, c(11, 1)] # 1=txt 11=usr
   d <- as.character(d)
   #
   # Close the file connection
