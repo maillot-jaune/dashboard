@@ -9,19 +9,23 @@
 	<script type="javascript" src="opencpu/opencpu-0.5.js"> </script>
 	<script type="javascript"> 
 
-	var mydata = [1,2,2,1,2,3,2,3,4,5]
+//	var mydata = [1,2,2,1,2,3,2,3,4,5]
 
 	$(document).ready(function(){
-		var req = ocpu.rpc("sd",{
-				x : mydata
-			}, function(output){
-				$("#myFirstID").text("Hej");
-		});
+//	function(output){
+		$("#myFirstID").text("Hej");
+//	});
 
-		req.fail(function(){
-			alert("R returned an error: " + req.responseText); 
-		});
-
+//		var req = ocpu.rpc("sd",{
+//				x : mydata
+//			}, function(output){
+//				$("#myFirstID").text("Hej");
+//		});
+//
+//		req.fail(function(){
+//			alert("R returned an error: " + req.responseText); 
+//		});
+//
 	});
 
 	</script>
