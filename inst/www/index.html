@@ -14,7 +14,7 @@
 		var req = ocpu.rpc("get_tweet",{
 				x : 1
 			}, function(output){
-				$("#myFirstID").text(concat("@",output[0]));
+				$("#myFirstID").text("@" + output[0]);
 		});
 
 		req.fail(function(){
