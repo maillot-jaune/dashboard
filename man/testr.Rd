@@ -2,7 +2,7 @@
 \alias{testr}
 \title{Function for testing connectivity}
 \usage{
-  testr(x=1)
+  testr(x)
 }
 \arguments{
   \item{x}{Stupid function call. X must be numeric.}
