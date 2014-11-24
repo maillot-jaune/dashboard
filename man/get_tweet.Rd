@@ -2,7 +2,7 @@
 \alias{get_tweet}
 \title{Function for getting the latest tweet from the timeline of user \code{@si_petersson}}
 \usage{
-  get_tweet()
+  get_tweet(x)
 }
 \arguments{
   \item{x}{The number of tweets to get}
