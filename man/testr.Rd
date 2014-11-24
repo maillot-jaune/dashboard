@@ -4,6 +4,9 @@
 \usage{
   testr(x=1)
 }
+\arguments{
+  \item{x}{Stupid function call. X must be numeric.}
+}
 \description{
   Just a test... Adds \code{pi} to a number.
 }
