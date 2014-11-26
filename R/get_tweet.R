@@ -3,15 +3,16 @@ get_tweet <- function(x){
   # Get the twitter auth file. This is just @si_petersson
   # authentication. So the tweet returned by this function 
   # will be the latest one in @si_petersson timeline.
-  twitter_authentication <- file(description = '/etc/twitter_auth.Rdata', 
-    open = 'rb', 
-    blocking = TRUE, 
-    encoding = getOption('encoding')
-  )
+# twitter_authentication <- file(description = '/etc/twitter_auth.Rdata', 
+#   open = 'rb', 
+#   blocking = TRUE, 
+#   encoding = getOption('encoding')
+# )
   #
   # Load the authentication data image into the current 
   # environment
-  load(twitter_authentication)
+# load(twitter_authentication)
+  data(twitter_auth)
   #
   # Authentcate...
   registerTwitterOAuth(twitCred)
