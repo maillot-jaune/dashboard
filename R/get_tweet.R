@@ -8,7 +8,7 @@ get_tweet <- function(x){
     blocking = TRUE, 
     encoding = getOption('encoding')
   )
-  #
+  # 
   # Load the authentication data image into the current 
   # environment
   load(twitter_authentication)
