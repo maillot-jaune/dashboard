@@ -1,9 +1,4 @@
 testr <- function(x){
-  plot(x,
-    ann = FALSE,
-    axes = FALSE
-  )
-  
-  axis(1)
-  
+  res <- x * pi
+  return(res)
 }
