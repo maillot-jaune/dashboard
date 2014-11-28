@@ -2,7 +2,7 @@
 \alias{weekRecruit}
 \title{Get weekly recruiting}
 \usage{
-  weekRecruit()
+  weekRecruit(x)
 }
 \arguments{
   \item{x}{Numeric}
