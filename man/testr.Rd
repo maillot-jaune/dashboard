@@ -5,9 +5,7 @@
   testr(ticker, from, to)
 }
 \arguments{
-  \item{ticker}{Text}
-  \item{from}{Date}
-  \item{to}{Date}
+  \item{x}{Numeric}
 }
 \description{
   Just a test... Adds \code{pi} to a number.
