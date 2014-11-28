@@ -24,20 +24,9 @@
 		});
 
 
-
-
-
-		var test = ocpu.rpc("plot"), {
+		var test = $("#img_test").rplot("plot", {
 			x : 25
-		}, function(output){
-		
 		})
-
-
-
-
-
-
 
 		test.fail(function(){
 			alert("R returned an error: " + test.responseText); 
