@@ -1,4 +1,7 @@
 get_tweet <- function(x){
+  #
+  # Pre-define
+  twitCred = NULL
   # 
   # Get the twitter auth file. This is just @si_petersson
   # authentication. So the tweet returned by this function 
@@ -11,7 +14,7 @@ get_tweet <- function(x){
   # 
   # Load the authentication data image into the current 
   # environment
-  load(twitter_authentication, .GlobalEnv)
+  load(twitter_authentication)
   #
   # Authentcate...
   registerTwitterOAuth(twitCred)
