@@ -3,7 +3,7 @@ weekRecruit <- function(x){
 #  library(RMySQL)
 
   sql <- paste(scan('/home/dash/script/select_weekRecruit.SQL', 
-  sql <- paste(scan('/home/stefan/Desktop/select_weekRecruit.SQL', 
+#  sql <- paste(scan('/home/stefan/Desktop/select_weekRecruit.SQL', 
       what = 'character', 
       quiet = TRUE), 
     collapse = ' ')
@@ -13,7 +13,7 @@ weekRecruit <- function(x){
     host = '192.168.1.254', 
     dbname = 'dbSt', 
     password = 'four4u')
-# dbGetQuery(con, 'SET NAMES "utf8"')
+#  dbGetQuery(con, 'SET NAMES "utf8"')
   res <- dbSendQuery(con, sql)
   d <- fetch(res, n = -1)
   mysqlCloseConnection(con)
