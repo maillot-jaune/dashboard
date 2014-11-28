@@ -2,10 +2,9 @@ Package: dashboard
 Version: 0.0-8
 Date: 2014-11-26
 Title: Functions for running an internal dashboard via OpenCPU
-Authors@R: c(
-	person("Stefan", "Petersson", role = c("aut", "cre"), email = "stefan@inizio.se"), 
-	person("Magnus", "Rossby", role = "ctb", email = "magnus@inizio.se"), 
-	person("Anders", "Lithner", role = "ctb", email = "anders@inizio.se")
+Authors@R: c(person("Stefan", "Petersson", role = c("aut", "cre"), email = "stefan@inizio.se"), 
+	person("Magnus", "Rossby",    role = "ctb", email = "magnus@inizio.se"), 
+	person("Anders", "Lithner",   role = "ctb", email = "anders@inizio.se")
 )
 Author: Stefan Petersson
 Maintainer: Stefan Petersson <stefan@inizio.se>
