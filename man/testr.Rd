@@ -2,10 +2,12 @@
 \alias{testr}
 \title{Function for testing connectivity}
 \usage{
-  testr(x)
+  testr(ticker, from, to)
 }
 \arguments{
-  \item{x}{Stupid function call. X must be numeric.}
+  \item{ticker}{Text}
+  \item{from}{Date}
+  \item{to}{Date}
 }
 \description{
   Just a test... Adds \code{pi} to a number.
