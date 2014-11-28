@@ -1,6 +1,10 @@
 testr <- function(x){
-  plot(x,
+  p <- plot(x,
     ann = FALSE,
     axes = FALSE
   )
+  
+  p <- axis(1)
+  
+  return(p)
 }
