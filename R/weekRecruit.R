@@ -1,4 +1,4 @@
-weekRecruit <- function(){
+weekRecruit <- function(x){
 
 #  library(RMySQL)
 
@@ -21,7 +21,7 @@ weekRecruit <- function(){
 #  par(mar = c(2, 0, 2, 0))
   
 #  plot(d[ ,3],
-  plot(c(12,43,23,34,23,43,31),
+  plot(c(x,43,23,34,23,43,31),
     type='l',
     ann = FALSE,
     axes = FALSE,
