@@ -30,8 +30,8 @@ weekRecruit <- function(x){
   
   axis(1, 
     las = 1,
-    cex = 2,
-    font = 2,
+    cex.axis = 3,
+    font.axis = 2,
     col = '#cccccc',
     lwd = 8,
     col.axis = '#cccccc',
