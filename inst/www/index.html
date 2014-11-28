@@ -19,12 +19,16 @@
 				$("#tweet").text(output[1]);
 		});
 
+		req.fail(function(){
+			alert("R returned an error: " + req.responseText); 
+		});
+
 		var test = $("#img_test").rplot("plot", {
 			x : 25
 		})
 
-		req.fail(function(){
-			alert("R returned an error: " + req.responseText); 
+		test.fail(function(){
+			alert("R returned an error: " + test.responseText); 
 		});
 
 	});
