@@ -19,6 +19,10 @@
 				$("#tweet").text(output[1]);
 		});
 
+		var test = $("#img_test").rplot("plot", {
+			x : 25
+		})
+
 		req.fail(function(){
 			alert("R returned an error: " + req.responseText); 
 		});
@@ -30,6 +34,8 @@
 </head>
 <body>
 <h1>OpenCPU Cloud Server</h1>
+
+<div id="img_test"></div>
 
 	<div class="wrapper">
 		<div class="wrapperhead">Sverige Tycker!<img align="right" src="pic/sch_logo_white.png" /><img align="right" src="pic/inizio_logo_white_square.png" /></div>
