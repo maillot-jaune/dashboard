@@ -1,4 +1,4 @@
-weekRecruit <- function(x){
+weekRecruit <- function(){
 
 #  library(RMySQL)
 
