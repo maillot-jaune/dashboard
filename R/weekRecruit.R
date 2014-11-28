@@ -29,30 +29,30 @@ weekRecruit <- function(){
     col= '#33cccc'
   )
   
-  axis(1, 
-    las = 1,
-    col = '#cccccc',
-    lwd = 5,
-    col.axis = '#cccccc',
-    at = axTicks(1),
-    labels = substring(d[ ,2], 1, 2)
-  )
-  
-  points(d[ ,3], 
-    cex = 2,
-    pch = 21,
-    lwd = 5,
-    col = '#33cccc',
-    bg = '#ffffff',
-    xpd = TRUE
-  )
-  
-  text(x = 1:7, 
-    y = d[ ,3], 
-    labels = d[ ,3], 
-    xpd= TRUE,
-    col = '#cccccc',
-    pos = 3
-  )
+#  axis(1, 
+#    las = 1,
+#    col = '#cccccc',
+#    lwd = 5,
+#    col.axis = '#cccccc',
+#    at = axTicks(1),
+#    labels = substring(d[ ,2], 1, 2)
+#  )
+#  
+#  points(d[ ,3], 
+#    cex = 2,
+#    pch = 21,
+#    lwd = 5,
+#    col = '#33cccc',
+#    bg = '#ffffff',
+#    xpd = TRUE
+#  )
+#  
+#  text(x = 1:7, 
+#    y = d[ ,3], 
+#    labels = d[ ,3], 
+#    xpd= TRUE,
+#    col = '#cccccc',
+#    pos = 3
+#  )
   
 }
