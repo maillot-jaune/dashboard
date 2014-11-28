@@ -7,6 +7,8 @@ Authors@R: c(
 	person("Magnus", "Rossby", role = "ctb", email = "magnus@inizio.se"), 
 	person("Anders", "Lithner", role = "ctb", email = "anders@inizio.se")
 )
+Author: Stefan Petersson
+Maintainer: Stefan Petersson <stefan@inizio.se>
 Depends: R (>= 1.8.0), twitteR
 Description: This package works closely with OpenCPU to populate a local dashboard on the wall of the Inizio office.
 License: GPL (>= 2)
