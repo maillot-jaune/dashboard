@@ -24,14 +24,16 @@ weekRecruit <- function(x){
     type='l',
     ann = FALSE,
     axes = FALSE,
-    lwd = 5,
+    lwd = 8,
     col= '#33cccc'
   )
   
   axis(1, 
     las = 1,
+    cex = 1.3,
+    font = 2,
     col = '#cccccc',
-    lwd = 5,
+    lwd = 8,
     col.axis = '#cccccc',
     at = axTicks(1),
     labels = substring(d[ ,2], 1, 2)
@@ -40,14 +42,16 @@ weekRecruit <- function(x){
   points(d[ ,3], 
     cex = 2,
     pch = 21,
-    lwd = 5,
+    lwd = 8,
     col = '#33cccc',
     bg = '#ffffff',
     xpd = TRUE
   )
   
   text(x = 1:7, 
-    y = d[ ,3], 
+    y = d[ ,3],
+    cex = 1.3,
+    font = 2,
     labels = d[ ,3], 
     xpd= TRUE,
     col = '#cccccc',
