@@ -1,10 +1,9 @@
 testr <- function(x){
-  p <- plot(x,
+  plot(x,
     ann = FALSE,
     axes = FALSE
   )
   
-  p <- axis(1)
+  axis(1)
   
-  return(p)
 }
