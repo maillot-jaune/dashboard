@@ -1,4 +1,4 @@
 testr <- function(x){
-  res <- x*pi
-  return(res)
+  img <- plot(x)
+  return(img)
 }

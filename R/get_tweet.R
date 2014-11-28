@@ -1,6 +1,8 @@
 get_tweet <- function(x){
   #
-  # Pre-define
+  # Pre-define. This is actullay loaded from 
+  # "twitter_auth.Rdata", but this prevents a warning 
+  # during build.
   twitCred = NULL
   # 
   # Get the twitter auth file. This is just @si_petersson
@@ -27,6 +29,6 @@ get_tweet <- function(x){
   # Close the file connection
   close(twitter_authentication)
   #
-  # Return a character string
+  # Return the latest tweet
   return(d)
 }
