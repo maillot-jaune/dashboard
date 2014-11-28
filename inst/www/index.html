@@ -18,16 +18,16 @@
 				$("#twitter_user").text("@" + output[0] + ":");
 				$("#tweet").text(output[1]);
 		});
-
 		req.fail(function(){
 			alert("R returned an error: " + req.responseText); 
 		});
 
 
-		var test = $("#img_test").rplot("plot", {
+
+
+		var test = $("#img_test").rplot("rplot", {
 			x : 25
 		})
-
 		test.fail(function(){
 			alert("R returned an error: " + test.responseText); 
 		});
