@@ -12,7 +12,7 @@
 
 	$(document).ready(function(){
 
-		var req = ocpu.rpc("get_tweet",{
+		var req = ocpu.rpc("get_tweet", {
 				x : 1
 			}, function(output){
 				$("#twitter_user").text("@" + output[0] + ":");
@@ -23,9 +23,13 @@
 		});
 
 
-		var req = $("#img_test").rplot("testr", {
+		var plot_test = $("#img_test").rplot("testr", {
 		    x : 25
 		});
+		plot_test.fail(function(){
+			alert("R returned an error: " + plot_test.responseText); 
+		});
+
 
 	});
 
