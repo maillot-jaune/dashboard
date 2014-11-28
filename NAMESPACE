@@ -1,4 +1,3 @@
 import(twitteR)
-importFrom(graphics,plot)
 export(get_tweet)
 export(testr)
