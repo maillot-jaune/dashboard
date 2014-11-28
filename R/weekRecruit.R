@@ -30,7 +30,7 @@ weekRecruit <- function(x){
   
   axis(1, 
     las = 1,
-    cex = 1.3,
+    cex = 2,
     font = 2,
     col = '#cccccc',
     lwd = 8,
@@ -40,7 +40,7 @@ weekRecruit <- function(x){
   )
   
   points(d[ ,3], 
-    cex = 2,
+    cex = 3,
     pch = 21,
     lwd = 8,
     col = '#33cccc',
@@ -50,7 +50,7 @@ weekRecruit <- function(x){
   
   text(x = 1:7, 
     y = d[ ,3],
-    cex = 1.3,
+    cex = 2,
     font = 2,
     labels = d[ ,3], 
     xpd= TRUE,
