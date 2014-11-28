@@ -1,4 +1,4 @@
-weekRecruit <- function(){
+weekRecruit <- function(x){
 
 #  library(RMySQL)
 
@@ -13,7 +13,7 @@ weekRecruit <- function(){
     host = '192.168.1.254', 
     dbname = 'dbSt', 
     password = 'four4u')
-  dbGetQuery(con, 'SET NAMES "utf8"')
+# dbGetQuery(con, 'SET NAMES "utf8"')
   res <- dbSendQuery(con, sql)
   d <- fetch(res, n = -1)
   mysqlCloseConnection(con)
