@@ -1,3 +1,6 @@
 testr <- function(x){
-  plot(x)
+  plot(x,
+    ann = FALSE,
+    axes = FALSE
+  )
 }
