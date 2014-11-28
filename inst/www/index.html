@@ -6,7 +6,7 @@
 
 	<link href="style.css" rel="stylesheet" media="screen">
 
-	<script type="text/javascript" src="jquery/jquery.min.js"> </script>
+	<script type="text/javascript" src="jquery/jquery-1.11.1.min.js"> </script>
 	<script type="text/javascript" src="opencpu/opencpu-0.5.js"> </script>
 	<script type="text/javascript"> 
 
@@ -23,9 +23,21 @@
 			alert("R returned an error: " + req.responseText); 
 		});
 
-		var test = $("#img_test").rplot("plot", {
+
+
+
+
+		var test = ocpu.rpc("plot"), {
 			x : 25
+		}, function(output){
+		
 		})
+
+
+
+
+
+
 
 		test.fail(function(){
 			alert("R returned an error: " + test.responseText); 
