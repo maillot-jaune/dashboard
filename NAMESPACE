@@ -1,4 +1,4 @@
 import(twitteR)
-import(RMySQL)
 export(get_tweet)
 export(testr)
+export(weekRecruit)
