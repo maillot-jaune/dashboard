@@ -19,7 +19,7 @@ weekRecruit <- function(x){
   mysqlCloseConnection(con)
   
   par(bg = '#333333',
-    mar = c(1, 0, 0, 0)
+    mar = c(3, 0, 0, 0)
   )
   
   plot(d[ ,3],
