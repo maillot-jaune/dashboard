@@ -6,7 +6,7 @@ dayRecruit <- function(){
       what = 'character', 
       quiet = TRUE), 
     collapse = ' ')
-  drv <- DBI::dbDriver('MySQL')
+  drv <- dbDriver('MySQL')
   con <- dbConnect(drv, 
     user = 'root', 
     host = '192.168.1.254', 
