@@ -38,8 +38,8 @@ dayRecruit <- function(){
     col = '#cccccc',
     lwd = 8,
     col.axis = '#cccccc',
-    at = 0:23
- #  labels = substring(d[ ,2], 1, 2)
+    at = seq(from = 0, to = 23, by = 3),
+    labels = formatC(seq(from = 0, to = 23, by = 3), width = 2, format = 'd', flag = '0')
   )
   
   points(d[ ,3], 
