@@ -23,9 +23,7 @@
 		});
 
 
-		var plot_test = $("#img_test").rplot("weekRecruit", {
-		    x : 25
-		});
+		var plot_test = $("#img_test").rplot("weekRecruit");
 		plot_test.fail(function(){
 			alert("R returned an error: " + plot_test.responseText); 
 		});
@@ -47,13 +45,9 @@
 		<div class="blackblock">
 			<div class="blackhead">Infl&ouml;de, senaste veckan</div>
 
-<!-- Sätt en ny CSS id "blockimg" här -->
 			<div class="blocktext"> 
  				<div id="img_test"> </div>    
 			</div>
-			
-
-
 		</div>
 
 
