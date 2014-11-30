@@ -1,5 +1,4 @@
 import(twitteR)
-import(DBI)
 import(RMySQL)
 export(get_tweet)
 export(testr)
