@@ -5,7 +5,7 @@ Title: Functions for running an internal dashboard via OpenCPU
 Author: Stefan Petersson
 Maintainer: Stefan Petersson <stefan@inizio.se>
 Depends: R (>= 1.8.0), twitteR, RMySQL
-Suggests: DBI
+Imports: DBI
 Description: This package works closely with OpenCPU to populate a local dashboard on the wall of the Inizio office.
 License: GPL (>= 2)
 URL: http://www.inizio.se/
