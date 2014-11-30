@@ -44,7 +44,7 @@ weekRecruit <- function(x){
     pch = 21,
     lwd = 8,
     col = '#33cccc',
-#   bg = '#ffffff',
+    bg = '#33333',
     xpd = TRUE
   )
   
