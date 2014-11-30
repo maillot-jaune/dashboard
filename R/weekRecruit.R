@@ -18,7 +18,7 @@ weekRecruit <- function(x){
   d <- fetch(res, n = -1)
   mysqlCloseConnection(con)
   
-  par(bg = '#333333')
+# par(bg = '#333333')
   
   plot(d[ ,3],
     type='l',
