@@ -1,8 +1,8 @@
 dayRecruit <- function(){
 
-library(RMySQL)
-#  sql <- paste(scan('/home/dash/script/select_dayRecruit.SQL', 
-  sql <- paste(scan('/home/stefan/Desktop/select_dayRecruit.SQL', 
+#library(RMySQL)
+  sql <- paste(scan('/home/dash/script/select_dayRecruit.SQL', 
+#  sql <- paste(scan('/home/stefan/Desktop/select_dayRecruit.SQL', 
       what = 'character', 
       quiet = TRUE), 
     collapse = ' ')
