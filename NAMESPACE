@@ -1,6 +1,5 @@
 import(twitteR)
 import(RMySQL)
-importFrom(DBI,dbDriver)
 export(get_tweet)
 export(testr)
 export(weekRecruit)
