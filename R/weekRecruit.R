@@ -31,7 +31,7 @@ weekRecruit <- function(x){
   )
   
   axis(1,
-    mgp = c(0, 3, 0), # label, tick-mark label, tick-mark
+    mgp = c(0, 1.5 , 0), # label, tick-mark label, tick-mark
     las = 1,
     cex.axis = 2,
     cex.font = 2,
