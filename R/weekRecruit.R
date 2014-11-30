@@ -1,6 +1,6 @@
 weekRecruit <- function(x){
 
-#  library(RMySQL)
+# library(RMySQL)
 
   sql <- paste(scan('/home/dash/script/select_weekRecruit.SQL', 
 #  sql <- paste(scan('/home/stefan/Desktop/select_weekRecruit.SQL', 
@@ -18,7 +18,9 @@ weekRecruit <- function(x){
   d <- fetch(res, n = -1)
   mysqlCloseConnection(con)
   
-  par(bg = '#333333')
+  par(bg = '#333333',
+    mar = c(1, 0, 0, 0)
+  )
   
   plot(d[ ,3],
     type='l',
