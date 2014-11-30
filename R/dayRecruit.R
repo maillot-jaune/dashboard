@@ -38,7 +38,7 @@ dayRecruit <- function(){
     col = '#cccccc',
     lwd = 8,
     col.axis = '#cccccc',
- #  at = axTicks(1),
+    at = 0:23
  #  labels = substring(d[ ,2], 1, 2)
   )
   
