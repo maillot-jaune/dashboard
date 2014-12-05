@@ -24,12 +24,17 @@
 
 		var plot_weekRecruit = $("#img_weekRecruit").rplot("weekRecruit");
 		plot_weekRecruit.fail(function(){
-			alert("R returned an error: " + plot_dayRecruit.responseText); 
+			alert("R returned an error: " + plot_weekRecruit.responseText); 
 		});
 
 		var plot_dayRecruit = $("#img_dayRecruit").rplot("dayRecruit");
 		plot_dayRecruit.fail(function(){
 			alert("R returned an error: " + plot_dayRecruit.responseText); 
+		});
+		
+		var plot_weekOptOut = $("#img_weekOptOut").rplot("weekOptOut");
+		plot_weekOptOut.fail(function(){
+			alert("R returned an error: " + plot_weekOptOut.responseText); 
 		});
 
 	});
@@ -62,9 +67,9 @@
 
 
 		<div class="blackblock">
-			<div class="blackhead">Panelens storlek</div>
+			<div class="blackhead">Avhopp senaste veckan</div>
 				<div class="blocktext">
-					<div class="bigText">22 534</div>
+					<div id="img_weekOpOut"> </div>
 				</div>
 		</div>
 
