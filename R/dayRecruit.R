@@ -40,7 +40,7 @@ dayRecruit <- function(){
     lwd = 8,
     col.axis = '#cccccc',
     at = seq(from = 1, to = 23, by = 3),
-    labels = formatC(seq(from = 0, 
+    labels = formatC(seq(from = 1, 
         to = 23, 
         by = 3), 
       width = 2, 
