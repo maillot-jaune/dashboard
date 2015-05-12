@@ -16,7 +16,8 @@ weekRecruit <- function(){
   dbGetQuery(con, 'SET NAMES "utf8"')
   res <- dbSendQuery(con, sql)
   d <- fetch(res, n = -1)
-  mysqlCloseConnection(con)
+  #mysqlCloseConnection(con)
+  dbDisconnect(con)
   
   par(bg = '#333333',
     mar = c(3, 1, 2, 1) # bottom, left, top, right
