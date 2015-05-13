@@ -30,7 +30,11 @@ dayRecruit <- function(){
     lwd = 8,
     col= '#33cccc'
   )
-   axis(1, font = 2, col = '#cccccc')
+  
+  axis(1, font = 2, col = '#cccccc', at=c(0,6,12,18,24))
+
+   
+   
 #  axis(1,
 #    mgp = c(0, 1.5 , 0), # Tick label distance from axis, label, tick-mark label, tick-mark
 #    las = 1,
