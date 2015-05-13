@@ -21,7 +21,7 @@ dayRecruit <- function(){
   par(bg = '#333333',
     mar = c(3, 1, 2, 1) # bottom, left, top, right
   )
-  
+   
   
   d <- merge(data.frame(hour = 0:24), d, by.x = 'hour', all.x = TRUE)  
   #d[ ,2] <- ifelse(is.na(d[ ,2]), 0, d[ ,2])
