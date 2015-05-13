@@ -35,24 +35,24 @@ dayRecruit <- function(){
     col= '#33cccc'
   )
   
-  axis(1, font = 2, col = '#cccccc', at=c(0,6,12,18,24))
+# axis(1, font = 2, col = '#cccccc', at=c(0,6,12,18,24))
    
-#  axis(1,
-#    mgp = c(0, 1.5 , 0), # Tick label distance from axis, label, tick-mark label, tick-mark
-#    las = 1,
-#    cex.axis = 2,
-#    font = 2,
-#    col = '#cccccc',
-#    lwd = 8,
-#    col.axis = '#cccccc',
-#    at = seq(from = 1, to = 23, by = 3),
-#    labels = formatC(seq(from = 1, 
-#        to = 23, 
-#        by = 3), 
-#      width = 2, 
-#      format = 'd', 
-#      flag = '0')
-#  )
+  axis(1,
+    mgp = c(0, 1.5 , 0), # Tick label distance from axis, label, tick-mark label, tick-mark
+    las = 1,
+    cex.axis = 2,
+    font = 2,
+    col = '#cccccc',
+    lwd = 8,
+    col.axis = '#cccccc',
+    at = seq(from = 1, to = 23, by = 3),
+    labels = formatC(seq(from = 1, 
+        to = 23, 
+        by = 3), 
+      width = 2, 
+      format = 'd', 
+      flag = '0')
+  )
   
   points(d[ ,3], 
     cex = 3,
