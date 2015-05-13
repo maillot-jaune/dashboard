@@ -24,7 +24,7 @@ dayRecruit <- function(){
   
   
   d <- merge(data.frame(hour = 0:24), d, by.x = 'hour', all.x = TRUE)  
-  d[ ,2] <- ifelse(is.na(d[ ,2]), 0, d[ ,2])
+  #d[ ,2] <- ifelse(is.na(d[ ,2]), 0, d[ ,2])
   
   plot(d[ ,3],
     xlim = c(1, 24),
