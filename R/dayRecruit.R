@@ -22,6 +22,10 @@ dayRecruit <- function(){
     mar = c(3, 1, 2, 1) # bottom, left, top, right
   )
   
+  
+  d <- merge(data.frame(hour = 0:24), d, by.x = 'hour', all.x = TRUE)  
+  d[ ,2] <- ifelse(is.na(d[ ,2]), 0, d[ ,2])
+  
   plot(d[ ,3],
     xlim = c(1, 24),
     type='l',
@@ -32,8 +36,6 @@ dayRecruit <- function(){
   )
   
   axis(1, font = 2, col = '#cccccc', at=c(0,6,12,18,24))
-
-   
    
 #  axis(1,
 #    mgp = c(0, 1.5 , 0), # Tick label distance from axis, label, tick-mark label, tick-mark
